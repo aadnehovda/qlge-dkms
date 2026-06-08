@@ -1,0 +1,11 @@
+qlge-dkms for Debian and Proxmox
+================================
+
+The in-tree qlge driver was removed after Linux 6.6. This DKMS package is meant
+for Linux 6.7 and newer kernels, including current Proxmox kernels and newer
+Debian kernels.
+
+Debian 12's default 6.1 kernel still includes the in-tree qlge driver, so this
+package is not expected to build for that kernel series. Systems running newer
+Debian kernels, Debian backports kernels, or Proxmox kernels should install the
+matching kernel headers before installing this package.

@@ -1,0 +1,17 @@
+qlge-dkms (6.18.0-1-3) unstable; urgency=medium
+
+  * Match all Linux 6.7 and newer kernels in BUILD_EXCLUSIVE_KERNEL.
+
+ -- Ådne Hovda <ahovda@openit.com>  Fri, 05 Jun 2026 16:35:00 +0200
+
+qlge-dkms (6.18.0-1-2) unstable; urgency=medium
+
+  * Enable DKMS autoinstall during package configuration.
+
+ -- Ådne Hovda <ahovda@openit.com>  Fri, 05 Jun 2026 16:20:00 +0200
+
+qlge-dkms (6.18.0-1-1) unstable; urgency=medium
+
+  * Initial Debian packaging.
+
+ -- Ådne Hovda <ahovda@openit.com>  Fri, 05 Jun 2026 15:50:00 +0200

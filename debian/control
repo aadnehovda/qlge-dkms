@@ -1,0 +1,26 @@
+Source: qlge-dkms
+Section: kernel
+Priority: optional
+Maintainer: Ådne Hovda <ahovda@openit.com>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-dkms,
+Rules-Requires-Root: no
+Standards-Version: 4.7.2
+Homepage: https://github.com/gobenji/qlge-dkms
+Vcs-Browser: https://github.com/aadnehovda/qlge-dkms
+Vcs-Git: https://github.com/aadnehovda/qlge-dkms.git
+
+Package: qlge-dkms
+Architecture: all
+Depends:
+ dkms,
+ ${misc:Depends},
+Recommends:
+ linux-headers-amd64 | proxmox-default-headers | proxmox-headers | pve-headers,
+Description: DKMS source for the QLogic QLGE 10Gb Ethernet driver
+ This package provides the qlge Ethernet driver source to DKMS. It is intended
+ for kernels where the QLogic ISP8XXX 10Gb Ethernet driver is no longer shipped
+ in-tree, including newer Debian and Proxmox kernels.
+ .
+ The supported PCI device IDs are 1077:8000 and 1077:8012.
